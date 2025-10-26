@@ -14,6 +14,8 @@ router.use(express.json());
 //회원가입
 router.post("/join", join);
 
+//이제 로그인 기능도 만들어보자
+
 //로그인
 router.post("/login", login);
 //비밀번호 초기화 요청
