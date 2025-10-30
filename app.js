@@ -18,11 +18,14 @@ app.use("/users", userRouter); //쉽게 말해 routes에 있는 users.js를 불�
 const bookRouter = require("./routes/books");
 app.use("/books", bookRouter);
 
-const likeaRouter = require("./routes/likes");
-app.use("/likes", likeaRouter);
+const likeRouter = require("./routes/likes");
+app.use("/likes", likeRouter);
 
 const cartRouter = require("./routes/carts");
 app.use("/carts", cartRouter);
 
 const orderRouter = require("./routes/orders");
 app.use("/orders", orderRouter);
+
+const categoryRouter = require("./routes/category");
+app.use("/category", categoryRouter);
